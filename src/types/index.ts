@@ -1,13 +1,15 @@
+
 export interface ContentPost {
   id: string;
   slug: string;
   title: string;
-  category: 'bible-story' | 'blog' | 'gospel-track' | 'sunday-school' | 'flyer';
+  category: 'bible-story' | 'blog' | 'gospel-track' | 'sunday-school' | 'flyer' | 'story';
   date: string; // ISO string for sorting/display
   excerpt?: string; // For article lists
   content?: string; // Full content for articles/blogs
   description?: string; // Full content for articles/blogs
   author?: string;
+  description?: string;
   imageUrl?: string; // For flyers, article headers, track/outline thumbnails
   downloadUrl?: string; // For downloadable content
   fileType?: string; // e.g., PDF, DOCX for downloadables
@@ -15,3 +17,5 @@ export interface ContentPost {
   location?: string; // For flyers
   dataAiHint?: string; // For placeholder image search keywords
 }
+
+    
