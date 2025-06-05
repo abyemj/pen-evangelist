@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { getRecentPosts } from '@/lib/api';
@@ -6,7 +7,22 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import type { ContentPost } from '@/types';
 
+function getCategoryPath(category: ContentPost['category']): string {
+  switch (category) {
+    case 'blog':
+      return 'blog';
+    case 'bible-story':
+      return 'bible-stories';
+    case 'story':
+      return 'stories';
+    // Add other categories if they have different base paths for their slug pages
+    default:
+      return category; // Fallback for categories like 'flyer', 'gospel-track', etc. if they have slug pages later
+  }
+}
+
 function PostCard({ post }: { post: ContentPost }) {
+  const categoryPath = getCategoryPath(post.category);
   return (
     <Card className="flex flex-col h-full shadow-lg hover:shadow-xl transition-shadow duration-300">
       <CardHeader>
@@ -31,7 +47,7 @@ function PostCard({ post }: { post: ContentPost }) {
       </CardContent>
       <CardFooter>
         <Button asChild variant="link" className="text-primary hover:text-primary/80 px-0">
-          <Link href={`/${post.category === 'blog' ? 'blog' : post.category === 'bible-story' ? 'bible-stories' : post.category}/${post.slug}`}>
+          <Link href={`/${categoryPath}/${post.slug}`}>
             Read More <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>
@@ -84,6 +100,12 @@ export default function HomePage() {
               <Link href="/blog">Blog Posts</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
+              <Link href="/value-creation">Value Creation</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
+              <Link href="/stories">Stories</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
               <Link href="/gospel-tracks">Gospel Tracks</Link>
             </Button>
              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
@@ -98,3 +120,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+    

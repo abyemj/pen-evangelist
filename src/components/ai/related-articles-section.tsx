@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -11,7 +12,7 @@ import { Button } from '../ui/button';
 interface RelatedArticlesSectionProps {
   currentArticleTitle: string;
   currentArticleContent: string;
-  currentCategory: 'bible-story' | 'blog';
+  currentCategory: 'bible-story' | 'blog' | 'story';
 }
 
 export function RelatedArticlesSection({
@@ -49,7 +50,21 @@ export function RelatedArticlesSection({
     fetchRelatedArticles();
   }, [currentArticleTitle, currentArticleContent]);
 
-  const baseLinkPath = currentCategory === 'bible-story' ? '/bible-stories' : '/blog';
+  let baseLinkPath: string;
+  switch (currentCategory) {
+    case 'bible-story':
+      baseLinkPath = '/bible-stories';
+      break;
+    case 'blog':
+      baseLinkPath = '/blog';
+      break;
+    case 'story':
+      baseLinkPath = '/stories';
+      break;
+    default:
+      baseLinkPath = '/blog'; // Fallback, should not happen with TS
+  }
+
 
   if (isLoading) {
     return (
@@ -116,3 +131,5 @@ export function RelatedArticlesSection({
     </Card>
   );
 }
+
+    

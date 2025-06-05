@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import {
   SidebarProvider,
@@ -12,12 +13,24 @@ import {
   SidebarFooter,
 } from '@/components/ui/sidebar';
 import { Button } from '@/components/ui/button';
-import { Feather, Home, BookOpen, Newspaper, DownloadCloud, Megaphone, LogIn } from 'lucide-react';
+import { Feather, Home, BookOpen, Newspaper, DownloadCloud, Megaphone, LogIn, HeartHandshake, BookText } from 'lucide-react';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/bible-stories', label: 'Bible Stories', icon: BookOpen },
   { href: '/blog', label: 'Blog', icon: Newspaper },
+  { 
+    href: '/value-creation', 
+    label: 'Value Creation/Rehab', 
+    icon: HeartHandshake,
+    tooltip: 'Teachings on value system and value gaps with focus on the teen and young adult' 
+  },
+  { 
+    href: '/stories', 
+    label: 'Stories', 
+    icon: BookText,
+    tooltip: 'Fiction and life experiences captured creatively'
+  },
   { href: '/gospel-tracks', label: 'Gospel Tracks', icon: DownloadCloud },
   { href: '/sunday-school', label: 'Sunday School', icon: DownloadCloud },
   { href: '/flyers', label: 'Flyers', icon: Megaphone },
@@ -44,7 +57,11 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             {navItems.map((item) => (
               <SidebarMenuItem key={item.label}>
                 <Link href={item.href} passHref legacyBehavior>
-                  <SidebarMenuButton className="text-base" asChild>
+                  <SidebarMenuButton 
+                    className="text-base" 
+                    asChild
+                    tooltip={item.tooltip ? { children: item.tooltip, className: "max-w-xs text-center" } : undefined}
+                  >
                     <a>
                       <item.icon className="h-5 w-5" />
                       <span>{item.label}</span>
@@ -79,3 +96,5 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
     </SidebarProvider>
   );
 }
+
+    

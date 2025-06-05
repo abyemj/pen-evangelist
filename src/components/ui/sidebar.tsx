@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -554,7 +555,7 @@ const SidebarMenuButton = React.forwardRef<
     ref
   ) => {
     const Comp = asChild ? Slot : "button"
-    const { isMobile, state } = useSidebar()
+    const { isMobile } = useSidebar()
 
     const button = (
       <Comp
@@ -583,7 +584,7 @@ const SidebarMenuButton = React.forwardRef<
         <TooltipContent
           side="right"
           align="center"
-          hidden={state !== "collapsed" || isMobile}
+          hidden={isMobile} // Show tooltip on desktop regardless of sidebar state
           {...tooltip}
         />
       </Tooltip>
@@ -761,3 +762,5 @@ export {
   SidebarTrigger,
   useSidebar,
 }
+
+    

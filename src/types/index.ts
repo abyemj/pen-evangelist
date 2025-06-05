@@ -1,8 +1,9 @@
+
 export interface ContentPost {
   id: string;
   slug: string;
   title: string;
-  category: 'bible-story' | 'blog' | 'gospel-track' | 'sunday-school' | 'flyer';
+  category: 'bible-story' | 'blog' | 'gospel-track' | 'sunday-school' | 'flyer' | 'story';
   date: string; // ISO string for sorting/display
   excerpt?: string; // For article lists
   content?: string; // Full content for articles/blogs
@@ -14,3 +15,5 @@ export interface ContentPost {
   location?: string; // For flyers
   dataAiHint?: string; // For placeholder image search keywords
 }
+
+    
