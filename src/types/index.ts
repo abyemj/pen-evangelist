@@ -8,6 +8,7 @@ export interface ContentPost {
   excerpt?: string; // For article lists
   content?: string; // Full content for articles/blogs
   author?: string;
+  description?: string;
   imageUrl?: string; // For flyers, article headers, track/outline thumbnails
   downloadUrl?: string; // For downloadable content
   fileType?: string; // e.g., PDF, DOCX for downloadables

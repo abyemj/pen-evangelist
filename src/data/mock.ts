@@ -11,7 +11,7 @@ export const mockPosts: ContentPost[] = [
     author: 'Luke',
     excerpt: 'A parable about compassion and neighborly love, transcending societal boundaries.',
     content: '<p>A man was going down from Jerusalem to Jericho, when he was attacked by robbers. They stripped him of his clothes, beat him and went away, leaving him half dead. A priest happened to be going down the same road, and when he saw the man, he passed by on the other side. So too, a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he traveled, came where the man was; and when he saw him, he took pity on him. He went to him and bandaged his wounds, pouring on oil and wine. Then he put the man on his own donkey, brought him to an inn and took care of him. The next day he took out two denarii and gave them to the innkeeper. ‘Look after him,’ he said, ‘and when I return, I will reimburse you for any extra expense you may have.’</p><p>“Which of these three do you think was a neighbor to the man who fell into the hands of robbers?”</p><p>The expert in the law replied, “The one who had mercy on him.”</p><p>Jesus told him, “Go and do likewise.”</p>',
-    imageUrl: '/assets/the-good-samaritan.png',
+    imageUrl: '/assets/images/goodsamaritan.jpeg',
     dataAiHint: 'parable compassion',
   },
   {
@@ -23,7 +23,7 @@ export const mockPosts: ContentPost[] = [
     author: 'Jane Doe',
     excerpt: 'Exploring how incorporating daily prayer can bring tranquility and strength to our lives.',
     content: '<p>In the hustle and bustle of modern life, finding moments of peace can seem like a luxury. However, the practice of daily prayer offers a sanctuary for the soul, a dedicated time to connect with the divine and find inner calm. It is not about the length of the prayer, but the sincerity and consistency of the practice. Whether it’s a quiet moment in the morning, a brief pause during a busy day, or a reflective period before sleep, prayer can anchor us.</p><p>Many find that starting their day with prayer sets a positive tone, helping them to approach challenges with a clearer mind and a more resilient spirit. It can be a source of guidance, comfort, and strength. Over time, this daily ritual can cultivate a deeper sense of gratitude and mindfulness, enriching our spiritual lives and improving our overall well-being. Consider setting aside just a few minutes each day to explore the profound peace that prayer can offer.</p>',
-    imageUrl: '/assets/finding-peace-in-prayer.png',
+    imageUrl: '/assets/images/dailyprayer.png',
     dataAiHint: 'prayer reflection',
   },
   {
@@ -47,7 +47,7 @@ export const mockPosts: ContentPost[] = [
     description: 'An outline for Sunday School lessons covering the first chapter of Genesis. Printable.',
     downloadUrl: '/downloads/genesis-creation-study.pdf',
     fileType: 'PDF',
-    imageUrl: '/assets/genesis-creation-study.png',
+    imageUrl: '/assets/images/storyofcreation.jpg',
     dataAiHint: 'lesson plan',
   },
   {
@@ -57,7 +57,7 @@ export const mockPosts: ContentPost[] = [
     category: 'flyer',
     date: '2023-05-01T00:00:00Z',
     description: 'Join us for a day of fellowship, food, and fun for the whole family!',
-    imageUrl: '/assets/community-outreach-event.png',
+    imageUrl: '/assets/images/communityout.jpg',
     dataAiHint: 'community gathering',
     eventDate: '2023-06-15T10:00:00Z',
     location: 'Community Park, Main Street',
@@ -83,7 +83,7 @@ export const mockPosts: ContentPost[] = [
     author: 'Sarah Michaels',
     excerpt: 'Discover how simple act of writing down what you are thankful for can transform your perspective.',
     content: '<p>Gratitude journaling is a simple yet powerful practice that can significantly enhance your emotional well-being. It involves regularly taking the time to reflect on and write down things for which you are grateful. This act of conscious appreciation shifts your focus from what might be lacking in your life to the abundance that already surrounds you.</p><p>Studies have shown that practicing gratitude can lead to increased happiness, reduced stress, better sleep, and stronger relationships. It doesn’t require a lot of time – even a few minutes each day can make a difference. You can use a dedicated notebook or a digital app. The key is consistency and sincerity. Start by listing three to five things you are thankful for, no matter how small they may seem. Over time, you may find yourself noticing more and more blessings in your daily life, fostering a more positive and optimistic outlook.</p>',
-    imageUrl: '/assets/gratitude-journaling.png',
+    imageUrl: '/assets/images/powerofgrat.jpg',
     dataAiHint: 'mindfulness writing',
   },
   {
