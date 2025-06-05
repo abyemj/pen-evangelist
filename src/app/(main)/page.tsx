@@ -84,7 +84,7 @@ export default function HomePage() {
               <Link href="/blog">Blog Posts</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
-              <Link href="/gospel-tracks">Gospel Tracks</Link>
+              <Link href="/gospel-tracks">Gospel Tracks </Link>
             </Button>
              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
               <Link href="/sunday-school">Sunday School</Link>

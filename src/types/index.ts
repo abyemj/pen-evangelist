@@ -6,6 +6,7 @@ export interface ContentPost {
   date: string; // ISO string for sorting/display
   excerpt?: string; // For article lists
   content?: string; // Full content for articles/blogs
+  description?: string; // Full content for articles/blogs
   author?: string;
   imageUrl?: string; // For flyers, article headers, track/outline thumbnails
   downloadUrl?: string; // For downloadable content
