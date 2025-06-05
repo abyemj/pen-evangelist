@@ -71,7 +71,7 @@ export const mockPosts: ContentPost[] = [
     author: 'Luke',
     excerpt: 'A story of forgiveness, repentance, and unconditional love from a father.',
     content: '<p>Jesus continued: “There was a man who had two sons. The younger one said to his father, ‘Father, give me my share of the estate.’ So he divided his property between them.</p><p>“Not long after that, the younger son got together all he had, set off for a distant country and there squandered his wealth in wild living. After he had spent everything, there was a severe famine in that whole country, and he began to be in need. So he went and hired himself out to a citizen of that country, who sent him to his fields to feed pigs. He longed to fill his stomach with the pods that the pigs were eating, but no one gave him anything.</p><p>“When he came to his senses, he said, ‘How many of my father’s hired servants have food to spare, and here I am starving to death! I will set out and go back to my father and say to him: Father, I have sinned against heaven and against you. I am no longer worthy to be called your son; make me like one of your hired servants.’ So he got up and went to his father.</p><p>“But while he was still a long way off, his father saw him and was filled with compassion for him; he ran to his son, threw his arms around him and kissed him.</p><p>“The son said to him, ‘Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.’</p><p>“But the father said to his servants, ‘Quick! Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet. Bring the fattened calf and kill it. Let’s have a feast and celebrate. For this son of mine was dead and is alive again; he was lost and is found.’ So they began to celebrate.”</p>',
-    imageUrl: '/assets/the-prodigal-son.png',
+    imageUrl: '/assets/images/prodigalson.jpeg',
     dataAiHint: 'forgiveness redemption',
   },
   {
@@ -149,7 +149,7 @@ export const mockPosts: ContentPost[] = [
       <p>The next encounter with Tugba is a story for another day................</p>
       <p><small>Culled from Prophet Atetan V.A memoirs and embellished for effects</small></p>
     `,
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/assets/images/prodigalson.jpeg',
     dataAiHint: 'children conflict',
   },
 ];
