@@ -12,7 +12,7 @@ import {
   SidebarFooter,
 } from '@/components/ui/sidebar';
 import { Button } from '@/components/ui/button';
-import { Feather, Home, BookOpen, Newspaper, DownloadCloud, Megaphone, Settings } from 'lucide-react';
+import { Feather, Home, BookOpen, Newspaper, DownloadCloud, Megaphone, LogIn } from 'lucide-react';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
@@ -56,10 +56,11 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
           </SidebarMenu>
         </SidebarContent>
         <SidebarFooter className="p-4 border-t border-sidebar-border">
-           {/* Placeholder for potential footer items like settings or user profile */}
-           <Button variant="ghost" className="w-full justify-start gap-2 text-muted-foreground">
-            <Settings className="h-5 w-5" />
-            <span>Settings</span>
+           <Button variant="ghost" className="w-full justify-start gap-2 text-muted-foreground" asChild>
+            <Link href="/login">
+              <LogIn className="h-5 w-5" />
+              <span>Admin / Create Content</span>
+            </Link>
           </Button>
         </SidebarFooter>
       </Sidebar>
